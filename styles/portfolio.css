@@ -1,20 +1,42 @@
-body {
-  background: linear-gradient(
-    90deg,
-    rgb(179, 99, 249) 11.2%,
-    rgb(165, 69, 249) 47.7%,
-    rgb(152, 38, 252) 80.2%
-  );
+:root {
+  --handwriting-font-family: "Playpen Sans",
+    cursive;
+  --main-font-family: "Playwrite DE Grund",
+    system-ui;
 }
+
+body {
+  background: linear-gradient(90deg,
+      rgb(179, 99, 249) 11.2%,
+      rgb(165, 69, 249) 47.7%,
+      rgb(152, 38, 252) 80.2%);
+}
+
 .navbar-green {
   background: linear-gradient(-20deg, #3ced42 0%, #74f379 50%, #86e089 100%);
+  font-family: var(--main-font-family);
+  font-weight: 600;
 }
+
 h1 {
   font-size: 50px;
+  font-family: var(--handwriting-font-family);
+  font-size: 700;
+  color: rgb(71, 238, 76);
 }
+
 h2 {
   font-size: 20px;
+  font-family: var(--main-font-family);
+  font-weight: 600;
 }
+
 p {
   font-size: 20px;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+}
+
+button {
+  color: rgb(128, 231, 132);
 }
