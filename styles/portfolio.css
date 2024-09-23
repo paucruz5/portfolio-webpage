@@ -38,6 +38,17 @@ p {
 }
 
 .custom-btn {
-  color: rgb(83, 239, 89);
   font-size: 40px;
+}
+
+a:link {
+  color: rgb(83, 239, 89);
+}
+
+a:visited {
+  color: rgb(83, 239, 89);
+}
+
+.custom-btn:hover {
+  transform: scale(1.25);
 }
