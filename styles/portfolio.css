@@ -37,6 +37,7 @@ p {
   font-weight: 500;
 }
 
-button {
-  color: rgb(128, 231, 132);
+.custom-btn {
+  color: rgb(83, 239, 89);
+  font-size: 40px;
 }
