@@ -21,7 +21,6 @@ body {
 h1 {
   font-size: 50px;
   font-family: var(--handwriting-font-family);
-  font-size: 700;
   color: rgb(71, 238, 76);
 }
 
@@ -29,6 +28,13 @@ h2 {
   font-size: 20px;
   font-family: var(--main-font-family);
   font-weight: 600;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: var(--handwriting-font-family);
+  color: rgb(71, 238, 76);
+  font-weight: 500;
 }
 
 p {
@@ -41,14 +47,28 @@ p {
   font-size: 40px;
 }
 
-a:link {
+.social-net:link {
   color: rgb(83, 239, 89);
 }
 
-a:visited {
+.social-net:visited {
   color: rgb(83, 239, 89);
 }
 
 .custom-btn:hover {
   transform: scale(1.25);
+}
+
+.btn-link {
+  border-radius: 5px;
+  border: 3px solid rgb(83, 239, 89);
+  color: rgb(83, 239, 89);
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  transform: scale(1.25);
+  color: rgb(83, 239, 89);
+  border-radius: 5px;
+  border: 3px solid rgb(83, 239, 89);
 }
