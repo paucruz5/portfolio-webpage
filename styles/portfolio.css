@@ -18,6 +18,11 @@ body {
   font-weight: 600;
 }
 
+.hero-margin {
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
 h1 {
   font-size: 50px;
   font-family: var(--handwriting-font-family);
@@ -41,6 +46,17 @@ p {
   font-size: 20px;
   font-family: var(--main-font-family);
   font-weight: 500;
+  text-align: justify;
+}
+
+.justified-text-right {
+  width: 27rem;
+  margin-right: auto;
+}
+
+.justified-text-left {
+  width: 27rem;
+  margin-left: auto;
 }
 
 .custom-btn {
@@ -71,4 +87,48 @@ p {
   color: rgb(83, 239, 89);
   border-radius: 5px;
   border: 3px solid rgb(83, 239, 89);
+}
+
+@media (max-width: 768px) {
+  .pau-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1,
+  h2,
+  h3,
+  a {
+    width: inherit;
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .work-examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .intro-text {
+    font-size: 19px;
+  }
+
+  .justified-text-right,
+  .justified-text-left {
+    width: inherit;
+  }
+
+  .work-image {
+    margin-bottom: 2rem;
+    width: inherit;
+  }
 }
