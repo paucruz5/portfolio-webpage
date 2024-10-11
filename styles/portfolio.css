@@ -132,3 +132,29 @@ p {
     width: inherit;
   }
 }
+
+.show-work {
+  background: rgb(71, 238, 76);
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 3px solid rgb(152, 38, 252);
+  padding: 10px;
+}
+
+.show-work a {
+  text-decoration: none;
+  color: rgb(152, 38, 252);
+  font-weight: bolder;
+  font-family: var(--main-font-family);
+  font-size: 15px;
+}
+
+.show-work:hover {
+  transform: scale(1.25);
+}
+
+.show-work:visited {
+  color: rgb(152, 38, 252);
+}
