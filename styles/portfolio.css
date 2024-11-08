@@ -58,6 +58,62 @@ p {
   text-align: justify;
 }
 
+li {
+  font-size: 15px;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  text-align: justify;
+}
+
+.about-myself h1 {
+  font-size: 30px;
+  font-family: var(--handwriting-font-family);
+  color: rgb(71, 238, 76);
+}
+
+.about-myself h2 {
+  font-size: 15px;
+  font-family: var(--main-font-family);
+  font-weight: 600;
+}
+
+.shecodes a,
+.personality a {
+  text-decoration: none;
+  color: rgb(71, 238, 76);
+  transition: color 0.2s;
+}
+
+.shecodes a:hover,
+.personality a:hover {
+  color: white;
+}
+
+.shecodes,
+.personality {
+  transition: font-size 0.5s ease;
+}
+
+.shecodes:hover,
+.personality:hover {
+  font-size: 1.05em;
+}
+
+.about-myself {
+  margin-left: 170px;
+  margin-top: 25px;
+}
+
+ul {
+  list-style: square;
+}
+
+.recommendations {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
 .justified-text-right {
   width: 27rem;
   margin-right: auto;
@@ -70,6 +126,7 @@ p {
 
 .custom-btn {
   font-size: 40px;
+  transition: transform 0.5s ease;
 }
 
 .social-net:link {
@@ -81,7 +138,7 @@ p {
 }
 
 .custom-btn:hover {
-  transform: scale(1.25);
+  transform: scale(1.35);
 }
 
 .btn-link {
@@ -89,10 +146,11 @@ p {
   border: 3px solid rgb(83, 239, 89);
   color: rgb(83, 239, 89);
   text-decoration: none;
+  transition: transform 0.5s ease;
 }
 
 .btn-link:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
   color: rgb(83, 239, 89);
   border-radius: 5px;
   border: 3px solid rgb(83, 239, 89);
@@ -149,6 +207,7 @@ p {
   text-decoration: none;
   border: 3px solid rgb(152, 38, 252);
   padding: 10px;
+  transition: transform 0.5s ease;
 }
 
 .show-work a {
@@ -160,7 +219,7 @@ p {
 }
 
 .show-work:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
 }
 
 .show-work:visited {
