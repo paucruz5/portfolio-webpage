@@ -12,6 +12,7 @@ body {
       rgb(152, 38, 252) 80.2%);
 }
 
+/* navbar */
 .navbar-green {
   background: linear-gradient(-20deg, #3ced42 0%, #74f379 50%, #86e089 100%);
   font-family: var(--main-font-family);
@@ -27,6 +28,7 @@ body {
   transform: scale(1.25);
 }
 
+/* headings */
 .hero-section {
   margin-top: 120px;
   margin-bottom: 30px;
@@ -51,6 +53,7 @@ h3 {
   font-weight: 500;
 }
 
+/* paragraphs */
 p {
   font-size: 20px;
   font-family: var(--main-font-family);
@@ -58,11 +61,32 @@ p {
   text-align: justify;
 }
 
+.justified-text-right {
+  width: 27rem;
+  margin-right: auto;
+}
+
+.justified-text-left {
+  width: 27rem;
+  margin-left: auto;
+}
+
 li {
   font-size: 15px;
   font-family: var(--main-font-family);
   font-weight: 500;
   text-align: justify;
+}
+
+ul {
+  list-style: square;
+}
+
+
+/* about page */
+.about-myself {
+  margin-left: 170px;
+  margin-top: 25px;
 }
 
 .about-myself h1 {
@@ -77,6 +101,13 @@ li {
   font-weight: 600;
 }
 
+.recommendations {
+  font-size: 40px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* about page outside links */
 .shecodes a,
 .personality a {
   text-decoration: none;
@@ -99,36 +130,7 @@ li {
   font-size: 1.05em;
 }
 
-.about-myself {
-  margin-left: 170px;
-  margin-top: 25px;
-}
-
-ul {
-  list-style: square;
-}
-
-.recommendations {
-  font-size: 40px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-.justified-text-right {
-  width: 27rem;
-  margin-right: auto;
-}
-
-.justified-text-left {
-  width: 27rem;
-  margin-left: auto;
-}
-
-.custom-btn {
-  font-size: 40px;
-  transition: transform 0.5s ease;
-}
-
+/* social networks */
 .social-net:link {
   color: rgb(83, 239, 89);
 }
@@ -137,10 +139,16 @@ ul {
   color: rgb(83, 239, 89);
 }
 
+.custom-btn {
+  font-size: 40px;
+  transition: transform 0.5s ease;
+}
+
 .custom-btn:hover {
   transform: scale(1.35);
 }
 
+/* buttons to see projects */
 .btn-link {
   border-radius: 5px;
   border: 3px solid rgb(83, 239, 89);
@@ -156,6 +164,7 @@ ul {
   border: 3px solid rgb(83, 239, 89);
 }
 
+/* responsiveness */
 @media (max-width: 768px) {
   .hero-section {
     display: flex;
@@ -200,7 +209,8 @@ ul {
   }
 }
 
-.show-work {
+/* button that sends you to another section of the page */
+.section-btn {
   background: rgb(71, 238, 76);
   display: block;
   margin: 20px auto;
@@ -210,7 +220,7 @@ ul {
   transition: transform 0.5s ease;
 }
 
-.show-work a {
+.section-btn a {
   text-decoration: none;
   color: rgb(152, 38, 252);
   font-weight: bolder;
@@ -218,10 +228,10 @@ ul {
   font-size: 15px;
 }
 
-.show-work:hover {
+.section-btn:hover {
   transform: scale(1.15);
 }
 
-.show-work:visited {
+.section-btn:visited {
   color: rgb(152, 38, 252);
 }
