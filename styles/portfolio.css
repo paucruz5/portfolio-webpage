@@ -164,7 +164,9 @@ ul {
   border: 3px solid rgb(83, 239, 89);
 }
 
-/* responsiveness */
+/* RESPONSIVENESS */
+
+/* works only on small screens */
 @media (max-width: 768px) {
   .hero-section {
     display: flex;
@@ -182,6 +184,7 @@ ul {
   }
 }
 
+/* works on medium and small screens */
 @media (max-width: 992px) {
   .work-examples {
     display: flex;
@@ -207,6 +210,28 @@ ul {
     margin-bottom: 2rem;
     width: inherit;
   }
+}
+
+/* works on large, xl and xxl screens */
+/* to make the images bigger and centered of the web page when hover */
+@media (min-width: 993px) {
+
+  .work-image {
+    transition: transform 0.5s ease;
+  }
+
+  .work-image:hover {
+    transform: translateX(calc(25vw - 90px)) scale(2);
+  }
+
+  #weatherImage {
+    transition: transform 0.5s ease;
+  }
+
+  #weatherImage:hover {
+    transform: translateX(calc(90px - 25vw)) scale(2);
+  }
+
 }
 
 /* button that sends you to another section of the page */
