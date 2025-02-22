@@ -105,6 +105,7 @@ ul {
   font-size: 40px;
   margin-top: 40px;
   margin-bottom: 20px;
+  margin-left: -80px;
 }
 
 /* about page outside links */
@@ -216,20 +217,28 @@ ul {
 /* to make the images bigger and centered of the web page when hover */
 @media (min-width: 993px) {
 
-  .work-image {
+  #leftImage {
     transition: transform 0.5s ease;
   }
 
-  .work-image:hover {
+  #leftImage:hover {
     transform: translateX(calc(25vw - 90px)) scale(2);
   }
 
-  #weatherImage {
+  #rightImage {
     transition: transform 0.5s ease;
   }
 
-  #weatherImage:hover {
+  #rightImage:hover {
     transform: translateX(calc(90px - 25vw)) scale(2);
+  }
+
+  #imgRecommend {
+    transition: transform 0.5s ease;
+  }
+
+  #imgRecommend:hover {
+    transform: scale(1.5);
   }
 
 }

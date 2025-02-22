@@ -147,7 +147,9 @@
           </li>
           <li class="mb-1 fs-5">I use Visual Studio Code</li>
           <li class="mb-1 fs-5">I use JavaScript</li>
-          <li class="mb-1 fs-5">I use <a href="#" id="inclusiveLanguage">inclusive language</a></li>
+          <li class="mb-1 fs-5">
+            I use <a href="#" id="inclusiveLanguage">inclusive language</a>
+          </li>
         </p>
       </div>
 
@@ -252,50 +254,63 @@
               <li class="mb-1 fs-6">Open-minded & motivated</li>
               <li class="mb-1 fs-6">Kind-hearted & caring</li>
               <li class="mb-1 fs-6">Easygoing & forgiving</li>
-              <li class="mb-1 fs-6">Linguistic & Logical-mathematical intelligence</li>
-              <li class="mb-1 fs-6">Bodily-Kinesthetic, Musical & Naturalist intelligence</li>
-              <li class="mb-1 fs-6">Intrapersonal & Interpersonal intelligence (Emotional Intelligence)</li>
+              <li class="mb-1 fs-6">
+                Linguistic & Logical-mathematical intelligence
+              </li>
+              <li class="mb-1 fs-6">
+                Bodily-Kinesthetic, Musical & Naturalist intelligence
+              </li>
+              <li class="mb-1 fs-6">
+                Intrapersonal & Interpersonal intelligence (Emotional
+                Intelligence)
+              </li>
             </p>
           </div>
         </div>
       </div>
-    
-    <br />
-    <div>
-      <h1 class="fs-3">On a more personal note</h1>
-      <h2 class="fs-5">A little about my soul</h2>
-      <p>
-        <li class="mb-1 fs-5">I'm part of the LGBTQI+ community</li>
-        <li class="mb-1 fs-5">I'm a feminist, anti-racist and activist</li>
-        <li class="mb-1 fs-5">I'm an ecologist and animalist</li>
-        <li class="mb-1 fs-5">I can't live without music and cinema</li>
-        <li class="mb-1 fs-5">Love gives me purpose</li>
-        <li class="mb-1 fs-5">Strong family values</li>
 
+      <br />
+      <div>
+        <h1 class="fs-3">On a more personal note</h1>
+        <h2 class="fs-5">A little about my soul</h2>
+        <p>
+          <li class="mb-1 fs-5">I'm part of the LGBTQI+ community</li>
+          <li class="mb-1 fs-5">I'm a feminist, anti-racist and activist</li>
+          <li class="mb-1 fs-5">I'm an ecologist and animalist</li>
+          <li class="mb-1 fs-5">I can't live without music and cinema</li>
+          <li class="mb-1 fs-5">Love gives me purpose</li>
+          <li class="mb-1 fs-5">Strong family values</li>
+        </p>
+      </div>
 
-      </p>
-    </div>
-
-    <div class="text-center">
-      <h1 class="recommendations">WORK RECOMMENDATIONS</h1>
-      <img
-        class="my-1 work-image p-1 shadow rounded"
-        src="/images/zoha-recommendation.png"
-        alt=""
-        width="800"
-      />
-      <img
-        class="my-3 work-image p-1 shadow rounded"
-        src="/images/katy-recommendation.png"
-        alt=""
-        width="800"
-      />
-      <img
-        class="my-1 work-image p-1 shadow rounded"
-        src="/images/adam-recommendation.png"
-        alt=""
-        width="800"
-      />
+      <div class="container text-center recommendations">
+        <div class="row">
+          <div class="col">
+            <h1>WORK RECOMMENDATIONS</h1>
+            <img
+              class="my-1 work-image p-1 shadow rounded"
+              src="/images/zoha-recommendation.png"
+              alt=""
+              width="800"
+              id="imgRecommend"
+            />
+            <img
+              class="my-3 work-image p-1 shadow rounded"
+              src="/images/katy-recommendation.png"
+              alt=""
+              width="800"
+              id="imgRecommend"
+            />
+            <img
+              class="my-1 work-image p-1 shadow rounded"
+              src="/images/adam-recommendation.png"
+              alt=""
+              width="800"
+              id="imgRecommend"
+            />
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="container text-center">
@@ -313,12 +328,14 @@
       </div>
     </div>
 
-<!-- Event listeners for word definitions -->
+    <!-- Event listeners for word definitions -->
     <script>
-document.getElementById("inclusiveLanguage").addEventListener("click", function(event) {
-    event.preventDefault();
-    window.alert("You clicked!");
-  })
+      document
+        .getElementById("inclusiveLanguage")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          window.alert("You clicked!");
+        });
     </script>
   </body>
 </html>
