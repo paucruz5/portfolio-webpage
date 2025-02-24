@@ -12,6 +12,14 @@ body {
       rgb(152, 38, 252) 80.2%);
 }
 
+.blur-container {
+  background-image: url('your-background-image.jpg');
+  /* Example background */
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.3s ease-in-out;
+}
+
 /* navbar */
 .navbar-green {
   background: linear-gradient(-20deg, #3ced42 0%, #74f379 50%, #86e089 100%);
@@ -226,11 +234,21 @@ ul {
 @media (min-width: 993px) {
 
   #leftImage {
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  #leftImage {
     transition: transform 0.5s ease;
   }
 
   #leftImage:hover {
     transform: translateX(calc(25vw - 90px)) scale(2);
+  }
+
+  #leftImage:hover~.blur-container,
+  .blur-container:hover {
+    filter: blur(10px);
   }
 
   #rightImage {
