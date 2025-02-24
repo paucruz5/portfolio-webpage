@@ -12,15 +12,8 @@ body {
       rgb(152, 38, 252) 80.2%);
 }
 
-.blur-container {
-  background-image: url('your-background-image.jpg');
-  /* Example background */
-  background-size: cover;
-  background-position: center;
-  transition: filter 0.3s ease-in-out;
-}
-
 /* navbar */
+
 .navbar-green {
   background: linear-gradient(-20deg, #3ced42 0%, #74f379 50%, #86e089 100%);
   font-family: var(--main-font-family);
@@ -137,14 +130,26 @@ ul {
   color: white;
 }
 
-.shecodes,
-.personality {
-  transition: font-size 0.5s ease;
+#inclusiveLanguage,
+#intraIntel,
+#interIntel,
+#emoIntel,
+#lgbtDef,
+#polyDef,
+#feministDef {
+  text-decoration: none;
+  color: rgb(71, 238, 76);
+  transition: color 0.2s;
 }
 
-.shecodes:hover,
-.personality:hover {
-  font-size: 1.05em;
+#inclusiveLanguage:hover,
+#intraIntel:hover,
+#interIntel:hover,
+#emoIntel:hover,
+#lgbtDef:hover,
+#polyDef:hover,
+#feministDef:hover {
+  color: white;
 }
 
 /* social networks */
@@ -184,6 +189,14 @@ ul {
 /* RESPONSIVENESS */
 
 /* works only on small screens */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-section {
     display: flex;
@@ -230,13 +243,8 @@ ul {
 }
 
 /* works on large, xl and xxl screens */
-/* to make the images bigger and centered of the web page when hover */
+/* to make the web pages images bigger and centered of the web page when hover */
 @media (min-width: 993px) {
-
-  #leftImage {
-    z-index: 2;
-    cursor: pointer;
-  }
 
   #leftImage {
     transition: transform 0.5s ease;
@@ -244,11 +252,6 @@ ul {
 
   #leftImage:hover {
     transform: translateX(calc(25vw - 90px)) scale(2);
-  }
-
-  #leftImage:hover~.blur-container,
-  .blur-container:hover {
-    filter: blur(10px);
   }
 
   #rightImage {
