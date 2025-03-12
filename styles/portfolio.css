@@ -54,6 +54,12 @@ h3 {
   font-weight: 500;
 }
 
+.hero-heading {
+  font-family: var(--handwriting-font-family);
+  color: rgb(71, 238, 76);
+  margin-top: 120px;
+}
+
 /* paragraphs */
 #paragraph {
   font-size: 20px;
@@ -63,11 +69,9 @@ h3 {
 }
 
 #socialLinks {
-  font-size: 25px;
   font-family: var(--main-font-family);
   font-weight: 500;
   margin-left: -400px;
-  margin-top: 17px;
 }
 
 .justified-text-right {
@@ -81,7 +85,6 @@ h3 {
 }
 
 li {
-  font-size: 15px;
   font-family: var(--main-font-family);
   font-weight: 500;
   text-align: justify;
@@ -93,28 +96,15 @@ ul {
 
 
 /* about page */
-.about-myself {
-  margin-left: 170px;
-  margin-top: 25px;
-}
-
 .about-myself h1 {
-  font-size: 30px;
   font-family: var(--handwriting-font-family);
   color: rgb(71, 238, 76);
-}
-
-.about-myself h2 {
-  font-size: 15px;
-  font-family: var(--main-font-family);
-  font-weight: 600;
 }
 
 .recommendations {
   font-size: 40px;
   margin-top: 40px;
   margin-bottom: 20px;
-  margin-left: -80px;
 }
 
 /* about page outside links */
@@ -161,13 +151,30 @@ ul {
   color: rgb(83, 239, 89);
 }
 
-.custom-btn {
+.social-link:link {
+  color: rgb(83, 239, 89);
+}
+
+.social-link:visited {
+  color: rgb(83, 239, 89);
+}
+
+.contact-btn {
   font-size: 40px;
   transition: transform 0.5s ease;
 }
 
-.custom-btn:hover {
-  transform: scale(1.35);
+.contact-btn:hover {
+  transform: scale(1.7);
+}
+
+.social-btn {
+  font-size: 40px;
+  transition: transform 0.5s ease;
+}
+
+.social-btn:hover {
+  transform: scale(1.7);
 }
 
 /* buttons to see projects */
@@ -190,19 +197,8 @@ ul {
 
 /* works only on small screens */
 @media (max-width: 768px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .navbar>.container {
+    flex-wrap: nowrap !important;
   }
 
   h1,
@@ -216,6 +212,12 @@ ul {
 
 /* works on medium and small screens */
 @media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .work-examples {
     display: flex;
     flex-direction: column;
@@ -277,6 +279,7 @@ ul {
   background: rgb(71, 238, 76);
   display: block;
   margin: 20px auto;
+  margin-bottom: 30px;
   text-decoration: none;
   border: 3px solid rgb(152, 38, 252);
   padding: 10px;

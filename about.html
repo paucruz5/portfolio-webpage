@@ -39,7 +39,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-green fixed-top">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="about.html"
           ><img src="images/PMC.png" width="50" height="50" alt="logo"
         /></a>
@@ -79,36 +79,38 @@
     </nav>
 
     <div class="container hero-section">
-      <div class="row justify-content-center" style="margin-left: 150px">
-        <div class="col-md text-center">
+      <div class="row justify-content-center">
+        <div class="col-lg"></div>
+        <div class="col-lg text-center">
           <h1>Paulina Cruz</h1>
           <h2><small>front-end developer based in Mexico</small></h2>
           <br />
           <p class="justified-text-left intro-text" id="paragraph">
-            I always loved technology, since I was a little girl in a little
-            town. My curiosity for it made me the perfect self taught candidate.
-            I did a front-end course in SheCodes and it changed my life. I felt
-            in love with coding and I plan to keep learning more about it.
+            My curiosity and love for technology made me the perfect self taught
+            candidate. I did a front-end course in SheCodes and it changed my
+            life. I felt in love with coding and I plan to keep learning more
+            about it.
           </p>
         </div>
 
-        <div class="col-md ms-5">
+        <div class="col-lg">
           <img
-            class="img-fluid mt-2 ms-5 face-shot p-1 shadow rounded"
+            class="img-fluid ms-2 face-shot p-1 shadow rounded"
             src="images/pau&luca.JPEG"
             alt="Paulina-faceshot"
             width="220"
           />
         </div>
+        <div class="col-lg"></div>
       </div>
     </div>
 
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <button type="button" class="btn custom-btn">
+          <button type="button" class="btn social-btn">
             <a
-              class="social-net"
+              class="social-link"
               target="_blank"
               href="https://www.linkedin.com/in/paulinamarincruz/"
               ><i class="fa-brands fa-linkedin"></i>
@@ -117,9 +119,9 @@
         </div>
 
         <div class="col">
-          <button type="button" class="btn custom-btn">
+          <button type="button" class="btn social-btn">
             <a
-              class="social-net"
+              class="social-link"
               target="_blank"
               href="https://www.facebook.com/paucruz5"
               ><i class="fa-brands fa-facebook"></i>
@@ -128,9 +130,9 @@
         </div>
 
         <div class="col">
-          <button type="button" class="btn custom-btn">
+          <button type="button" class="btn social-btn">
             <a
-              class="social-net"
+              class="social-link"
               target="_blank"
               href="https://www.instagram.com/paucruz5/"
               ><i class="fa-brands fa-instagram"></i>
@@ -142,24 +144,22 @@
 
     <div class="about-myself">
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-left mt-5">
           <div class="col">
-            <h1 class="fs-3">About my work</h1>
-            <h2 class="fs-5">What exactly do I do?</h2>
+            <h1 class="about-me">About my work: What exactly do I do?</h1>
           </div>
-          <div class="col"></div>
         </div>
-        <p id="paragraph">
-          <li class="mb-1 fs-5">
+        <p>
+          <li class="mb-1 list">
             Give me the design of your dream web page and I will create it
           </li>
-          <li class="mb-1 fs-5">
+          <li class="mb-1 list">
             Honestly? Whatever you want, we can talk about it and see if I'm a
             good fit
           </li>
-          <li class="mb-1 fs-5">I use Visual Studio Code</li>
-          <li class="mb-1 fs-5">I use JavaScript</li>
-          <li class="mb-1 fs-5">
+          <li class="mb-1 list">I use Visual Studio Code</li>
+          <li class="mb-1 list">I use JavaScript</li>
+          <li class="mb-1 list">
             I use <a href="#" id="inclusiveLanguage">inclusive language</a>
           </li>
         </p>
@@ -167,19 +167,17 @@
 
       <br />
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-left">
           <div class="col">
-            <h1 class="fs-3">A little about me</h1>
-            <h2 class="fs-5">The basics...</h2>
+            <h1 class="about-me">A little about me: The basics</h1>
           </div>
-          <div class="col"></div>
         </div>
-        <p id="paragraph">
-          <li class="mb-1 fs-5">
+        <p>
+          <li class="mb-1 list">
             I'm 30 years old. Born in August, 1994. Of course I'm a Leo♌🔥
           </li>
-          <li class="mb-1 fs-5">I'm Mexican-Cuban</li>
-          <li class="mb-1 fs-5">
+          <li class="mb-1 list">I'm Mexican-Cuban</li>
+          <li class="mb-1 list">
             I studied front-end developing in
             <span class="shecodes">
               <a href="https://www.shecodes.io/" target="_blank"
@@ -187,11 +185,11 @@
               ></span
             >
           </li>
-          <li class="mb-1 fs-5">I also studied cinematography</li>
-          <li class="mb-1 fs-5">
+          <li class="mb-1 list">I also studied cinematography</li>
+          <li class="mb-1 list">
             I have 10 years of customer service experience
           </li>
-          <li class="mb-1 fs-5">
+          <li class="mb-1 list">
             My personality type is
             <span class="personality">
               <a
@@ -201,12 +199,14 @@
               ></span
             >
           </li>
-          <li class="mb-1 fs-5">
+          <li class="mb-1 list">
             I speak 3 languages:
             <ul>
-              <li class="my-1 fs-6">Spanish (native)</li>
-              <li class="mb-1 fs-6">English (competitive)</li>
-              <li class="mb-1 fs-6">Portuguese (intermediate-advance)</li>
+              <li class="my-1"><small>Spanish (native)</small></li>
+              <li class="mb-1"><small>English (competitive)</small></li>
+              <li class="mb-1">
+                <small>Portuguese (intermediate-advance)</small>
+              </li>
             </ul>
           </li>
         </p>
@@ -216,72 +216,84 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h1 class="fs-3">Work related skills</h1>
-            <h2 class="fs-5"></h2>
-            <p id="paragraph">
-              <li class="mb-1 fs-6">Leadership & proactive</li>
-              <li class="mb-1 fs-6">Polyvalent & efficient</li>
-              <li class="mb-1 fs-6">Multitasker & adaptable</li>
-              <li class="mb-1 fs-6">Critical thinking & Conceptual thinking</li>
-              <li class="mb-1 fs-6">Problem solver & decision making</li>
-              <li class="mb-1 fs-6">Detail oriented & succinct</li>
-              <li class="mb-1 fs-6">Independent & team player</li>
-              <li class="mb-1 fs-6">Fast & easy learner</li>
-              <li class="mb-1 fs-6">Creative & ingenious</li>
-              <li class="mb-1 fs-6">Assertive communication & eloquent</li>
-              <li class="mb-1 fs-6">Writing communication & teaching skills</li>
-              <li class="mb-1 fs-6">Public speaking & active listener</li>
-              <li class="mb-1 fs-6">Mistake-learner & ambitious</li>
-              <li class="mb-1 fs-6">Deductive & inductive reasoning</li>
-              <li class="mb-1 fs-6">Negotiation & persuasion</li>
-              <li class="mb-1 fs-6">Patient & persevering</li>
-              <li class="mb-1 fs-6">Disciplined & organized</li>
-              <li class="mb-1 fs-6">Stress & anger management</li>
-              <li class="mb-1 fs-6">Language learning & good memory</li>
-              <li class="mb-1 fs-6">Top-notch customer service</li>
-              <li class="mb-1 fs-6">
-                Comfortable with asking for help & asking questions
+            <h1 class="about-me">Work related skills</h1>
+            <p>
+              <li class="mb-1 specialList">Leadership & proactive</li>
+              <li class="mb-1 specialList">Polyvalent & efficient</li>
+              <li class="mb-1 specialList">Multitasker & adaptable</li>
+              <li class="mb-1 specialList">
+                Critical thinking & Conceptual thinking
               </li>
-              <li class="mb-1 fs-6">
-                Comfortable when someone points out my mistakes
+              <li class="mb-1 specialList">Problem solver & decision making</li>
+              <li class="mb-1 specialList">Detail oriented & succinct</li>
+              <li class="mb-1 specialList">Independent & team player</li>
+              <li class="mb-1 specialList">Fast & easy learner</li>
+              <li class="mb-1 specialList">Creative & ingenious</li>
+              <li class="mb-1 specialList">
+                Assertive communication & eloquent
               </li>
-              <li class="mb-1 fs-6">Comfortable with working under pressure</li>
+              <li class="mb-1 specialList">
+                Writing communication & teaching skills
+              </li>
+              <li class="mb-1 specialList">
+                Public speaking & active listener
+              </li>
+              <li class="mb-1 specialList">Mistake-learner & ambitious</li>
+              <li class="mb-1 specialList">Deductive & inductive reasoning</li>
+              <li class="mb-1 specialList">Negotiation & persuasion</li>
+              <li class="mb-1 specialList">Patient & persevering</li>
+              <li class="mb-1 specialList">Disciplined & organized</li>
+              <li class="mb-1 specialList">Stress & anger management</li>
+              <li class="mb-1 specialList">Language learning & good memory</li>
+              <li class="mb-1 specialList">Top-notch customer service</li>
+              <li class="mb-1 specialList">
+                <small>
+                  Comfortable with asking for help & asking questions</small
+                >
+              </li>
+              <li class="mb-1 specialList">
+                <small> Comfortable when someone points out my mistakes</small>
+              </li>
+              <li class="mb-1 specialList">
+                <small> Comfortable with working under pressure</small>
+              </li>
             </p>
           </div>
           <div class="col">
-            <h1 class="fs-3">Personality traits</h1>
-            <h2 class="fs-5"></h2>
-            <p id="paragraph">
-              <li class="mb-1 fs-6">Practical & rational</li>
-              <li class="mb-1 fs-6">Resourceful & reliable</li>
-              <li class="mb-1 fs-6">Confident & genuine</li>
-              <li class="mb-1 fs-6">Grateful & generous</li>
-              <li class="mb-1 fs-6">Outspoken & advocate</li>
-              <li class="mb-1 fs-6">Decisive & responsible</li>
-              <li class="mb-1 fs-6">Meticulous & tidy</li>
-              <li class="mb-1 fs-6">Punctual & curious</li>
-              <li class="mb-1 fs-6">Empathic & compassionate</li>
-              <li class="mb-1 fs-6">Courageous & resilient</li>
-              <li class="mb-1 fs-6">Honest & loyal</li>
-              <li class="mb-1 fs-6">Rightful & fair</li>
-              <li class="mb-1 fs-6">Respectful & tolerant</li>
-              <li class="mb-1 fs-6">Helpful & friendly</li>
-              <li class="mb-1 fs-6">Conscientious & thoughtful</li>
-              <li class="mb-1 fs-6">Optimistic & great attitude</li>
-              <li class="mb-1 fs-6">Open-minded & motivated</li>
-              <li class="mb-1 fs-6">Kind-hearted & caring</li>
-              <li class="mb-1 fs-6">Easygoing & forgiving</li>
-              <li class="mb-1 fs-6">
+            <h1 class="about-me">Personality traits</h1>
+            <p class="paragraph">
+              <li class="mb-1 specialList">Practical & rational</li>
+              <li class="mb-1 specialList">Resourceful & reliable</li>
+              <li class="mb-1 specialList">Confident & genuine</li>
+              <li class="mb-1 specialList">Grateful & generous</li>
+              <li class="mb-1 specialList">Outspoken & advocate</li>
+              <li class="mb-1 specialList">Decisive & responsible</li>
+              <li class="mb-1 specialList">Meticulous & tidy</li>
+              <li class="mb-1 specialList">Punctual & curious</li>
+              <li class="mb-1 specialList">Empathic & compassionate</li>
+              <li class="mb-1 specialList">Courageous & resilient</li>
+              <li class="mb-1 specialList">Honest & loyal</li>
+              <li class="mb-1 specialList">Rightful & fair</li>
+              <li class="mb-1 specialList">Respectful & tolerant</li>
+              <li class="mb-1 specialList">Helpful & friendly</li>
+              <li class="mb-1 specialList">Conscientious & thoughtful</li>
+              <li class="mb-1 specialList">Optimistic & great attitude</li>
+              <li class="mb-1 specialList">Open-minded & motivated</li>
+              <li class="mb-1 specialList">Kind-hearted & caring</li>
+              <li class="mb-1 specialList">Easygoing & forgiving</li>
+              <li class="mb-1 specialList">
                 Linguistic & Logical-mathematical intelligence
               </li>
-              <li class="mb-1 fs-6">
-                Bodily-Kinesthetic, Musical & Naturalist intelligence
+              <li class="mb-1 specialList">
+                <small>
+                  Bodily-Kinesthetic, Musical & Naturalist intelligence</small
+                >
               </li>
-              <li class="mb-1 fs-6">
+              <li class="mb-1 specialList">
                 <a href="#" id="intraIntel">Intrapersonal</a> &
                 <a href="#" id="interIntel">Interpersonal</a> intelligence
               </li>
-              <li class="mb-1 fs-6">
+              <li class="mb-1 specialList">
                 <a href="#" id="emoIntel">Emotional Intelligence</a>
               </li>
             </p>
@@ -291,34 +303,32 @@
 
       <br />
       <div class="container">
-        <div class="row text-center">
+        <div class="row text-left">
           <div class="col">
-            <h1 class="fs-3">On a more personal note...</h1>
-            <h2 class="fs-5">A little about my soul</h2>
+            <h1 class="about-me">Paulina: a little about my soul</h1>
           </div>
-          <div class="col"></div>
         </div>
-        <p id="paragraph">
-          <li class="mb-1 fs-5">
+        <p>
+          <li class="mb-1 list">
             I'm part of the <a href="#" id="lgbtDef">LGBTQIA+</a> and
             <a href="#" id="polyDef">polyamorous</a> community
           </li>
-          <li class="mb-1 fs-5">
+          <li class="mb-1 list">
             I'm a <a href="#" id="feministDef">feminist</a>, anti-racist and
             activist
           </li>
-          <li class="mb-1 fs-5">I'm an ecologist and animalist</li>
-          <li class="mb-1 fs-5">
+          <li class="mb-1 list">I'm an ecologist and animalist</li>
+          <li class="mb-1 list">
             I can't live without music, cinema, books and art
           </li>
-          <li class="mb-1 fs-5">Love gives me purpose</li>
-          <li class="mb-1 fs-5">Strong family values</li>
+          <li class="mb-1 list">Love gives me purpose</li>
+          <li class="mb-1 list">Strong family values</li>
         </p>
       </div>
 
-      <div class="container text-center recommendations">
-        <div class="row">
-          <div class="col">
+      <div class="container recommendations">
+        <div class="row justify-content-center">
+          <div class="col-lg text-center">
             <h1>WORK RECOMMENDATIONS</h1>
             <img
               class="my-1 work-image p-1 shadow rounded"
@@ -350,76 +360,18 @@
       <div class="row">
         <div class="col">
           <button class="section-btn shadow rounded">
-            <a href="contact.html" target="_self">Let's work together!</a>
+            <a href="work.html" target="_self">More of my work</a>
           </button>
         </div>
 
         <div class="col">
           <button class="section-btn shadow rounded">
-            <a href="work.html" target="_self">More of my work</a>
+            <a href="contact.html" target="_self">Let's work together!</a>
           </button>
         </div>
       </div>
     </div>
 
-    <!-- Event listeners for word definitions -->
-    <script>
-      document
-        .getElementById("inclusiveLanguage")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          window.alert(
-            "Inclusive language avoids words, phrases, or tones that exclude or discriminate against people. It's also known as non-discriminatory language. E.g. the use of gender-neutral terms, etc."
-          );
-        });
-      document
-        .getElementById("intraIntel")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          window.alert(
-            "Intrapersonal intelligence is the ability to understand oneself, including one's thoughts, emotions, and motivations. It also involves using this understanding to make decisions and communicate."
-          );
-        });
-      document
-        .getElementById("interIntel")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          window.alert(
-            "Interpersonal intelligence is the ability to understand, communicate and interact with others: manage relationships, understand their needs, feelings, behavior, etc. "
-          );
-        });
-      document
-        .getElementById("emoIntel")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          window.alert(
-            "Emotional intelligence is the ability to understand and manage your own emotions, as well as the emotions of others. It also involves being able to relate to others and solve conflicts."
-          );
-        });
-      document
-        .getElementById("lgbtDef")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          window.alert(
-            "LGBTQIA+ is an acronym that stands for lesbian, gay, bisexual, transgender, queer, intersex, and asexual. The + represents other identities that are not included in the acronym."
-          );
-        });
-      document
-        .getElementById("polyDef")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          window.alert(
-            "Literally means: many loves. People who desire or have multiple ongoing intimate relationships, whether sexual or romantic, with the consent of everyone involved. Polyamorists want to have deeper connections with multiple people, through love, affection and communication."
-          );
-        });
-      document
-        .getElementById("feministDef")
-        .addEventListener("click", function (event) {
-          event.preventDefault();
-          window.alert(
-            "Any person who believes in the social, political, and economic equality of all genders, regardless of race, ethnicity, socioeconomic class, religion, ability, and sexual orientation."
-          );
-        });
-    </script>
+    <script src="functions.js"></script>
   </body>
 </html>
