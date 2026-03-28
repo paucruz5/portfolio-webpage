@@ -71,7 +71,6 @@ h3 {
 #socialLinks {
   font-family: var(--main-font-family);
   font-weight: 500;
-  margin-left: -400px;
 }
 
 .justified-text-right {
@@ -87,7 +86,7 @@ h3 {
 li {
   font-family: var(--main-font-family);
   font-weight: 500;
-  text-align: justify;
+  text-align: left;
 }
 
 ul {
@@ -101,8 +100,19 @@ ul {
   color: rgb(71, 238, 76);
 }
 
+.about-myself {
+  margin: 0 auto;
+  text-align: center;
+  /* allows centering for titles */
+}
+
+
+.about-myself ul {
+  display: inline-block;
+  /* allows centering for lists */
+}
+
 .recommendations {
-  font-size: 40px;
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -142,61 +152,40 @@ ul {
   color: white;
 }
 
+/* contact page */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.social-net {
+  display: block;
+  text-align: left;
+}
+
+.social-net i {
+  margin-right: 30px;
+}
+
 /* social networks */
 .social-net:link {
   color: rgb(83, 239, 89);
   text-decoration: none;
 }
 
-.social-net:hover {
-  color: rgb(87, 85, 85);
-}
-
 .social-net:visited {
   color: rgb(83, 239, 89);
 }
 
-.social-link:link {
-  color: rgb(83, 239, 89);
+.social-net:hover {
+  color: rgb(87, 85, 85);
 }
 
-.social-link:visited {
-  color: rgb(83, 239, 89);
-}
-
-.contact-btn {
-  font-size: 40px;
-  transition: transform 0.5s ease;
-}
-
-.contact-btn:hover {
-  transform: scale(1.7);
-}
-
-.social-btn {
-  font-size: 40px;
-  margin-bottom: 20px;
-}
-
-.social-btn:hover {
-  transform: scale(1.7);
-  transition: transform 0.5s ease;
-}
-
-.email-link {
-  margin-top: 75px;
-  margin-bottom: 20px;
-}
-
-.email-link a {
-  text-decoration: none;
-  font-size: 25px;
-  color: rgb(83, 239, 89);
-}
-
-.email-link:hover {
-  transform: scale(1.2);
-  transition: transform 0.5s ease;
+.social-net:active {
+  color: rgb(87, 85, 85);
 }
 
 /* buttons to see projects */

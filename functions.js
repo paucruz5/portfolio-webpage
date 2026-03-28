@@ -99,7 +99,7 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     window.alert(
-      "Inclusive language avoids words, phrases, or tones that exclude or discriminate against people. It's also known as non-discriminatory language. E.g. the use of gender-neutral terms, etc."
+      "Inclusive language avoids words, phrases, or tones that exclude or discriminate against people. It's also known as non-discriminatory language. E.g. the use of gender-neutral terms, etc.",
     );
   });
 document
@@ -107,7 +107,7 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     window.alert(
-      "Intrapersonal intelligence is the ability to understand oneself, including one's thoughts, emotions, and motivations. It also involves using this understanding to make decisions and communicate."
+      "Intrapersonal intelligence is the ability to understand oneself, including one's thoughts, emotions, and motivations. It also involves using this understanding to make decisions and communicate.",
     );
   });
 document
@@ -115,25 +115,25 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     window.alert(
-      "Interpersonal intelligence is the ability to understand, communicate and interact with others: manage relationships, understand their needs, feelings, behavior, etc. "
+      "Interpersonal intelligence is the ability to understand, communicate and interact with others: manage relationships, understand their needs, feelings, behavior, etc. ",
     );
   });
 document.getElementById("emoIntel").addEventListener("click", function (event) {
   event.preventDefault();
   window.alert(
-    "Emotional intelligence is the ability to understand and manage your own emotions, as well as the emotions of others. It also involves being able to relate to others and solve conflicts."
+    "Emotional intelligence is the ability to understand and manage your own emotions, as well as the emotions of others. It also involves being able to relate to others and solve conflicts.",
   );
 });
 document.getElementById("lgbtDef").addEventListener("click", function (event) {
   event.preventDefault();
   window.alert(
-    "LGBTQIA+ is an acronym that stands for lesbian, gay, bisexual, transgender, queer, intersex, and asexual. The + represents other identities that are not included in the acronym."
+    "LGBTQIA+ is an acronym that stands for lesbian, gay, bisexual, transgender, queer, intersex, and asexual. The + represents other identities that are not included in the acronym.",
   );
 });
 document.getElementById("polyDef").addEventListener("click", function (event) {
   event.preventDefault();
   window.alert(
-    "Literally means: many loves. People who desire or have multiple ongoing intimate relationships, whether sexual or romantic, with the consent of everyone involved. Polyamorists want to have deeper connections with multiple people, through love, affection and communication."
+    "Literally means: many loves. People who desire or have multiple ongoing intimate relationships, whether sexual or romantic, with the consent of everyone involved. Polyamorists want to have deeper connections with multiple people, through love, affection, sex and communication.",
   );
 });
 document
@@ -141,6 +141,6 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     window.alert(
-      "Any person who believes in the social, political, and economic equality of all genders, regardless of race, ethnicity, socioeconomic class, religion, ability, and sexual orientation."
+      "Any person who believes in the social, political, and economic equality of all genders, regardless of race, ethnicity, socioeconomic class, religion, ability, and sexual orientation.",
     );
   });
