@@ -133,7 +133,7 @@ document.getElementById("lgbtDef").addEventListener("click", function (event) {
 document.getElementById("polyDef").addEventListener("click", function (event) {
   event.preventDefault();
   window.alert(
-    "Literally means: many loves. People who desire or have multiple ongoing intimate relationships, whether sexual or romantic, with the consent of everyone involved. Polyamorists want to have deeper connections with multiple people, through love, affection, sex and communication.",
+    "Literally means: many loves. People who desire or have multiple ongoing intimate relationships, whether sexual or romantic, with the knowledge and consent of everyone involved. Polyamorists want to have deeper connections with multiple people, through love, affection, sex and communication.",
   );
 });
 document
