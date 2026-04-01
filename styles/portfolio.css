@@ -60,17 +60,11 @@ h3 {
   margin-top: 120px;
 }
 
-/* paragraphs */
 #paragraph {
   font-size: 20px;
   font-family: var(--main-font-family);
   font-weight: 500;
   text-align: justify;
-}
-
-#socialLinks {
-  font-family: var(--main-font-family);
-  font-weight: 500;
 }
 
 .justified-text-right {
@@ -170,7 +164,6 @@ ul {
   margin-right: 30px;
 }
 
-/* social networks */
 .social-net:link {
   color: rgb(83, 239, 89);
   text-decoration: none;
@@ -311,4 +304,49 @@ ul {
 
 .section-btn:visited {
   color: rgb(152, 38, 252);
+}
+
+/* footer email */
+.email-link {
+  margin: 50px 0;
+}
+
+.email-link a {
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(83, 239, 89);
+}
+
+.email-link:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+/* footer social buttons */
+.social-btn {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.social-btn a:link {
+  color: rgb(83, 239, 89);
+}
+
+.social-btn a:visited {
+  color: rgb(83, 239, 89);
+}
+
+.social-btn:hover {
+  transform: scale(1.7);
+  transition: transform 0.5s ease;
+}
+
+.social-btn a:active {
+  color: rgb(87, 85, 85);
+}
+
+/* footer open sourced */
+.github-code {
+  text-decoration: none;
+  color: rgb(83, 239, 89);
 }
