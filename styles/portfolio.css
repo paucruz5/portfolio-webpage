@@ -233,8 +233,20 @@ ul {
     font-size: 35px;
   }
 
-  .intro-text {
-    font-size: 19px;
+  .home-intro {
+    margin-bottom: -70px;
+  }
+
+  .face-shot {
+    margin-bottom: 40px;
+  }
+
+  .about-intro {
+    margin-bottom: 30px;
+  }
+
+  .dog-picture {
+    margin-bottom: -35px;
   }
 
   .justified-text-right,
