@@ -292,7 +292,43 @@ ul {
   color: rgb(87, 85, 85);
 }
 
+/* text inside image that tells user to tap on image */
+.image-link {
+  position: relative;
+  display: inline-block;
+}
+
+/* styling of the text */
+.tap-text {
+  position: absolute;
+  bottom: 40px;
+  right: 115px;
+  color: rgb(83, 239, 89);
+  font-size: 8px;
+  font-family: var(--main-font-family);
+}
+
+/* Hide text */
+.tap-text {
+  display: none;
+}
+
 /* RESPONSIVENESS */
+
+/* Show text ONLY on devices that DON'T support hover (touch screens) */
+@media (hover: none) and (pointer: coarse) {
+  .tap-text {
+    display: block;
+  }
+}
+
+/* Fixes text position in large screens */
+@media (min-width: 992px) {
+  .tap-text {
+    bottom: 8px;
+    right: 8px;
+  }
+}
 
 /* works only on small screens */
 @media (max-width: 768px) {
@@ -307,8 +343,18 @@ ul {
     white-space: nowrap;
   }
 
+  .list {
+    font-size: 15px !important;
+  }
+
   .section-btn {
     margin: 10px;
+  }
+
+  /* Fixes text position in small screens */
+  .tap-text {
+    bottom: 40px;
+    right: 8px;
   }
 }
 
@@ -362,30 +408,9 @@ ul {
   .justified-text-left {
     width: 70%;
   }
-}
 
-.image-link {
-  position: relative;
-  display: inline-block;
-}
-
-.tap-text {
-  position: absolute;
-  bottom: 40px;
-  right: 8px;
-  color: rgb(83, 239, 89);
-  font-size: 8px;
-  font-family: var(--main-font-family);
-}
-
-/* Hide by default */
-.tap-text {
-  display: none;
-}
-
-/* Show ONLY on devices that DON'T support hover (touch screens) */
-@media (hover: none) and (pointer: coarse) {
-  .tap-text {
-    display: block;
+  /* makes images as wide as the text*/
+  .project-image {
+    width: 70%;
   }
 }

@@ -36,9 +36,6 @@ function resizeList() {
 resizeList();
 window.addEventListener("resize", resizeList);
 
-resizeSpecialList();
-window.addEventListener("resize", resizeSpecialList);
-
 /* resize contact links */
 function resizeContactLinks() {
   const elements = document.querySelectorAll(".social-contact, .contact-btn");
