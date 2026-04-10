@@ -60,7 +60,7 @@ h3 {
   margin-top: 120px;
 }
 
-#paragraph {
+.paragraphText {
   font-size: 20px;
   font-family: var(--main-font-family);
   font-weight: 500;
@@ -87,6 +87,9 @@ ul {
   list-style: square;
 }
 
+.project-image:hover {
+  border: 5px solid rgb(71, 238, 76);
+}
 
 /* about page */
 .about-myself h1 {
@@ -181,22 +184,6 @@ ul {
   color: rgb(87, 85, 85);
 }
 
-/* buttons to see projects */
-.btn-link {
-  border-radius: 5px;
-  border: 3px solid rgb(83, 239, 89);
-  color: rgb(83, 239, 89);
-  text-decoration: none;
-  transition: transform 0.5s ease;
-}
-
-.btn-link:hover {
-  transform: scale(1.15);
-  color: rgb(83, 239, 89);
-  border-radius: 5px;
-  border: 3px solid rgb(83, 239, 89);
-}
-
 /* RESPONSIVENESS */
 
 /* works only on small screens */
@@ -212,6 +199,11 @@ ul {
     width: inherit;
     text-align: center;
   }
+
+  /* makes the text in the hamburger menu one line per item instead of breaking into two lines*/
+  .navbar-nav .nav-link {
+    white-space: nowrap;
+  }
 }
 
 /* works on medium and small screens */
@@ -220,6 +212,11 @@ ul {
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  /* creates more distance between the logo and the text in medium screens */
+  .navbar-collapse {
+    padding-left: 50px;
   }
 
   .work-examples {
@@ -254,51 +251,43 @@ ul {
     width: inherit;
   }
 
+  .project-image {
+    margin-bottom: 2rem;
+  }
+
   .work-image {
     margin-bottom: 2rem;
     width: inherit;
   }
 }
 
-/* works on large, xl and xxl screens */
-/* to make the web pages images bigger and centered of the web page when hover */
-@media (min-width: 993px) {
-
-  #leftImage {
-    transition: transform 0.5s ease;
-  }
-
-  #leftImage:hover {
-    transform: translateX(calc(25vw - 90px)) scale(2);
-  }
-
-  #rightImage {
-    transition: transform 0.5s ease;
-  }
-
-  #rightImage:hover {
-    transform: translateX(calc(90px - 25vw)) scale(2);
-  }
-
-  #imgRecommend {
-    transition: transform 0.5s ease;
-  }
-
-  #imgRecommend:hover {
-    transform: scale(1.5);
-  }
-
+/* button that sends you to another section of the page */
+.buttons-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  padding: 0 15px;
 }
 
-/* button that sends you to another section of the page */
 .section-btn {
   background: rgb(71, 238, 76);
-  display: block;
-  margin: 20px auto;
-  margin-bottom: 30px;
-  text-decoration: none;
   border: 3px solid rgb(152, 38, 252);
-  padding: 10px;
+  color: rgb(152, 38, 252);
+  font-weight: bolder;
+  font-family: var(--main-font-family);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  /* same button size ALWAYS */
+  width: 100%;
+  max-width: 220px;
+  height: 60px;
+  /* 🔥 auto shrink text */
+  font-size: clamp(12px, 2.5vw, 15px);
+
   transition: transform 0.5s ease;
 }
 
@@ -321,6 +310,7 @@ ul {
 /* footer email */
 .email-link {
   margin: 50px 0;
+  text-align: center;
 }
 
 .email-link a {
@@ -329,22 +319,22 @@ ul {
   color: rgb(83, 239, 89);
 }
 
-.email-link:hover {
-  transform: scale(1.2);
-  transition: transform 0.5s ease;
+.email-link a:hover {
+  color: rgb(87, 85, 85);
 }
 
 /* footer social buttons */
 .social-btn {
   font-size: 40px;
   margin-bottom: 20px;
-}
-
-.social-btn a:link {
   color: rgb(83, 239, 89);
 }
 
-.social-btn a:visited {
+.social-btn:link {
+  color: rgb(83, 239, 89);
+}
+
+.social-btn:visited {
   color: rgb(83, 239, 89);
 }
 
@@ -353,7 +343,7 @@ ul {
   transition: transform 0.5s ease;
 }
 
-.social-btn a:active {
+.social-btn:active {
   color: rgb(87, 85, 85);
 }
 
@@ -361,4 +351,8 @@ ul {
 .github-code {
   text-decoration: none;
   color: rgb(83, 239, 89);
+}
+
+.github-code:hover {
+  color: rgb(87, 85, 85);
 }

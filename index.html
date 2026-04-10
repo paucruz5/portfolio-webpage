@@ -21,8 +21,6 @@
       href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&family=Playwrite+DE+Grund:wght@100..400&display=swap"
       rel="stylesheet"
@@ -99,7 +97,7 @@
           <h1>Paulina Cruz</h1>
           <h2><small>front-end developer based in Mexico</small></h2>
           <br />
-          <p class="justified-text-left home-intro" id="paragraph">
+          <p class="justified-text-left home-intro paragraphText">
             I aim to create engaging digital experiences that delight users and
             meet business goals. I thrive on turning complex ideas into visually
             appealing and intuitive interfaces.
@@ -121,32 +119,25 @@
     <div class="container work-examples">
       <div class="row justify-content-center">
         <div class="col-lg text-end">
-          <img
-            src="images/women-poems.png"
-            alt="Paulina Cruz's Web page that finds poems written by women"
-            width="440"
-            class="work-image p-1 shadow rounded"
-            id="leftImage"
-          />
+          <a href="https://women-poems-searcher.netlify.app/" target="_blank">
+            <img
+              src="images/women-poems.png"
+              alt="Paulina Cruz's Web page that finds poems written by women"
+              width="440"
+              class="project-image p-1 shadow rounded"
+            />
+          </a>
         </div>
 
         <div class="col-lg text-start" style="margin-bottom: 40px">
           <div class="text-center text-lg-start">
             <h3 class="title-page">POEM SEARCHER</h3>
           </div>
-          <p class="justified-text-right" id="paragraph">
+          <p class="justified-text-right paragraphText">
             Choose the theme of the poem, in any language you'd like and, using
             AI, the searcher will show you a beautiful poem written by a woman
             from anywhere in the world.
           </p>
-          <div class="page-button text-center text-lg-start">
-            <a
-              href="https://women-poems-searcher.netlify.app/"
-              target="_blank"
-              class="btn btn-link"
-              >Poem Searcher
-            </a>
-          </div>
         </div>
       </div>
 
@@ -158,12 +149,12 @@
           <div class="text-center text-lg-end">
             <h3 class="title-page">WEATHER APP</h3>
           </div>
-          <p class="justified-text-left" id="paragraph">
+          <p class="justified-text-left paragraphText">
             Choose any city in the world and the searcher will show this week's
             weather in that city. It also shows the weather, date and time of
             your current location.
           </p>
-          <div class="page-button text-center text-lg-end">
+          <div class="text-center text-lg-end">
             <a
               href="https://weather-pc.netlify.app/"
               target="_blank"
@@ -178,8 +169,7 @@
             src="images/weather-app.png"
             alt="Paulina Cruz's Web page that shows you the weather in any city"
             width="430"
-            class="work-image p-1 shadow rounded"
-            id="rightImage"
+            class="project-image p-1 shadow rounded"
           />
         </div>
       </div>
@@ -190,8 +180,7 @@
             src="images/world-clock.png"
             alt="Paulina Cruz's Web page that shows the time of a few cities"
             width="440"
-            class="work-image p-1 shadow rounded"
-            id="leftImage"
+            class="project-image p-1 shadow rounded"
           />
         </div>
 
@@ -199,12 +188,12 @@
           <div class="text-center text-lg-start">
             <h3 class="title-page">WORLD CLOCK</h3>
           </div>
-          <p class="justified-text-right" id="paragraph">
+          <p class="justified-text-right paragraphText">
             This page shows you the full date and time, in a digital clock, of
             nine default cities all around the world. One of those cities is
             your current location.
           </p>
-          <div class="page-button text-center text-lg-start">
+          <div class="text-center text-lg-start">
             <a
               href="https://world-clock-pc.netlify.app/index.html"
               target="_blank"
@@ -217,101 +206,82 @@
     </div>
 
     <div class="container text-center py-5">
-      <div class="row">
-        <div class="col">
-          <button class="section-btn shadow rounded">
-            <a href="about.html" target="_self" title="About Paulina"
-              >Get to know me!</a
-            >
-          </button>
-        </div>
+      <div class="buttons-row">
+        <a href="about.html" class="section-btn shadow rounded">
+          Get to know me!
+        </a>
 
-        <div class="col">
-          <button class="section-btn shadow rounded">
-            <a href="work.html" target="_self" title="Paulina’s Work"
-              >More of my work</a
-            >
-          </button>
-        </div>
+        <a href="work.html" class="section-btn shadow rounded">
+          More of my work
+        </a>
 
-        <div class="col">
-          <button class="section-btn shadow rounded">
-            <a href="contact.html" target="_self" title="Contact Paulina"
-              >Let's work together!</a
+        <a href="contact.html" class="section-btn shadow rounded">
+          Let's work together!
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="email-link">
+        <a href="mailto:paulinamc_micki@hotmail.com" title="Paulina's email"
+          ><strong>paulinamc_micki@hotmail.com</strong></a
+        >
+      </div>
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <a
+              class="btn social-btn"
+              target="_blank"
+              href="https://www.linkedin.com/in/paulinamarincruz/"
+              title="LinkedIn Profile"
             >
-          </button>
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+
+          <div class="col">
+            <a
+              class="btn social-btn"
+              target="_blank"
+              href="https://www.facebook.com/paucruz5"
+              title="Facebook Profile"
+              ><i class="fa-brands fa-facebook"></i>
+            </a>
+          </div>
+
+          <div class="col">
+            <a
+              class="btn social-btn"
+              target="_blank"
+              href="https://www.instagram.com/paucruz5/"
+              title="Instagram Profile"
+              ><i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+
+          <div class="col">
+            <a
+              class="btn social-btn"
+              target="_blank"
+              href="https://github.com/paucruz5/"
+              title="GitHub Profile"
+              ><i class="fa-brands fa-github"></i>
+            </a>
+          </div>
         </div>
       </div>
 
-      <footer>
-        <div class="email-link">
-          <a href="mailto:paulinamc_micki@hotmail.com" title="Paulina's email"
-            ><strong>paulinamc_micki@hotmail.com</strong></a
-          >
-        </div>
-
-        <div class="container text-center">
-          <div class="row">
-            <div class="col">
-              <button type="button" class="btn social-btn">
-                <a
-                  class="social-link"
-                  target="_blank"
-                  href="https://www.linkedin.com/in/paulinamarincruz/"
-                  title="LinkedIn Profile"
-                  ><i class="fa-brands fa-linkedin"></i>
-                </a>
-              </button>
-            </div>
-
-            <div class="col">
-              <button type="button" class="btn social-btn">
-                <a
-                  class="social-link"
-                  target="_blank"
-                  href="https://www.facebook.com/paucruz5"
-                  title="Facebook Profile"
-                  ><i class="fa-brands fa-facebook"></i>
-                </a>
-              </button>
-            </div>
-
-            <div class="col">
-              <button type="button" class="btn social-btn">
-                <a
-                  class="social-link"
-                  target="_blank"
-                  href="https://www.instagram.com/paucruz5/"
-                  title="Instagram Profile"
-                  ><i class="fa-brands fa-instagram"></i>
-                </a>
-              </button>
-            </div>
-
-            <div class="col">
-              <button type="button" class="btn social-btn">
-                <a
-                  class="social-link"
-                  target="_blank"
-                  href="https://github.com/paucruz5/"
-                  title="GitHub Profile"
-                  ><i class="fa-brands fa-github"></i>
-                </a>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <p class="text-center mt-2">
-          This project was coded by Paulina Cruz, and it is
-          <a
-            href="https://github.com/paucruz5/portfolio-webpage"
-            target="_blank"
-            class="github-code"
-            >open-sourced</a
-          >
-        </p>
-      </footer>
-    </div>
+      <p class="text-center mt-2">
+        This project was coded by Paulina Cruz, and it is
+        <a
+          href="https://github.com/paucruz5/portfolio-webpage"
+          target="_blank"
+          class="github-code"
+          >open-sourced</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
