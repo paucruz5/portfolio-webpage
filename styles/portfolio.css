@@ -60,6 +60,8 @@ h3 {
 .face-shot,
 .dog-picture {
   margin-bottom: 20px;
+  max-width: 220px !important;
+  /* keeps the images the same size across all screen sizes */
 }
 
 /* work and contact page */
@@ -125,6 +127,10 @@ ul {
   margin-bottom: 20px;
 }
 
+.recommendations-title {
+  font-size: clamp(28px, 6vw, 50px);
+}
+
 /* about page outside links */
 .shecodes a,
 .personality a {
@@ -172,6 +178,7 @@ ul {
 .social-contact {
   display: block;
   text-align: left;
+  font-size: clamp(22px, 4vw, 35px) !important;
 }
 
 .social-contact i {
@@ -196,12 +203,11 @@ ul {
 }
 
 /* button that sends you to another section of the page */
-.buttons-row {
+.bottom-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: nowrap;
-  padding: 0 15px;
 }
 
 .section-btn {
@@ -214,12 +220,12 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 30px;
   /* same button size ALWAYS */
-  width: 100%;
-  max-width: 220px;
-  height: 60px;
-  /* 🔥 auto shrink text */
+  width: auto;
+  padding: 10px 15px;
+  height: 50px;
+  /* auto shrink text */
   font-size: clamp(12px, 2.5vw, 15px);
   transition: transform 0.5s ease;
 }
@@ -294,51 +300,39 @@ ul {
 
 /* works only on small screens */
 @media (max-width: 768px) {
+
+  /* puts the hamburger menu at the right of the screen */
   .navbar>.container {
     flex-wrap: nowrap !important;
-  }
-
-  h1,
-  h2,
-  h3,
-  a {
-    width: inherit;
-    text-align: center;
   }
 
   /* makes the text in the hamburger menu one line per item instead of breaking into two lines*/
   .navbar-nav .nav-link {
     white-space: nowrap;
   }
+
+  .section-btn {
+    margin: 10px;
+  }
 }
 
 /* works on medium and small screens */
-@media (max-width: 992px) {
-  .hero-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+@media (max-width: 991px) {
 
   /* creates more distance between the logo and the text in medium screens */
   .navbar-collapse {
     padding-left: 50px;
   }
 
-  .work-examples {
-    display: flex;
+  .hero-section {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  h1 {
-    font-size: 35px;
-  }
-
-  .justified-text-right,
-  .justified-text-left {
-    width: inherit;
+  .work-examples {
+    flex-direction: column;
+    text-align: center;
   }
 
   .project-image {
@@ -348,5 +342,28 @@ ul {
   .work-image {
     margin-bottom: 2rem;
     width: inherit;
+  }
+
+  .work-examples .col-lg,
+  .hero-section .col-lg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .paragraph-description,
+  .paragraph-pages {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* works only on medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .justified-text-right,
+  .justified-text-left {
+    width: 70%;
   }
 }
