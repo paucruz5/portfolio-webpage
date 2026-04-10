@@ -17,25 +17,6 @@ function resizeHeroHeading() {
 resizeHeroHeading();
 window.addEventListener("resize", resizeHeroHeading);
 
-/* resize about headings */
-function resizeAboutHeadings() {
-  const elements = document.querySelectorAll(".about-me");
-  const windowWidth = window.innerWidth;
-
-  const baseFontSize = windowWidth / 23;
-
-  const maxFontSize = 30;
-
-  const newFontSize = Math.min(baseFontSize, maxFontSize);
-
-  elements.forEach((element) => {
-    element.style.fontSize = newFontSize + "px";
-  });
-}
-
-resizeAboutHeadings();
-window.addEventListener("resize", resizeAboutHeadings);
-
 /* resize about lists */
 function resizeList() {
   const elements = document.querySelectorAll(".list");
@@ -76,7 +57,7 @@ window.addEventListener("resize", resizeSpecialList);
 
 /* resize contact links */
 function resizeContactLinks() {
-  const elements = document.querySelectorAll(".social-net, .contact-btn");
+  const elements = document.querySelectorAll(".social-contact, .contact-btn");
   const windowWidth = window.innerWidth;
 
   const baseFontSize = windowWidth / 30;

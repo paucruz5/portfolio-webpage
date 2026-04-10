@@ -13,7 +13,6 @@ body {
 }
 
 /* navbar */
-
 .navbar-green {
   background: linear-gradient(-20deg, #3ced42 0%, #74f379 50%, #86e089 100%);
   font-family: var(--main-font-family);
@@ -29,12 +28,6 @@ body {
   transform: scale(1.25);
 }
 
-/* headings */
-.hero-section {
-  margin-top: 120px;
-  margin-bottom: 30px;
-}
-
 h1 {
   font-size: 50px;
   font-family: var(--handwriting-font-family);
@@ -48,35 +41,64 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 27px;
   font-family: var(--handwriting-font-family);
   color: rgb(71, 238, 76);
   font-weight: 500;
 }
 
+/* home and about page */
+.hero-section {
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.text-intro {
+  margin-bottom: 40px;
+}
+
+.face-shot,
+.dog-picture {
+  margin-bottom: 20px;
+}
+
+/* work and contact page */
 .hero-heading {
   font-family: var(--handwriting-font-family);
   color: rgb(71, 238, 76);
   margin-top: 120px;
 }
 
-.paragraphText {
+/* home and work page */
+.paragraph-description {
   font-size: 20px;
   font-family: var(--main-font-family);
   font-weight: 500;
   text-align: justify;
 }
 
+.paragraph-pages {
+  font-size: 18px;
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  text-align: justify;
+}
+
 .justified-text-right {
-  width: 27rem;
+  width: 22rem;
   margin-right: auto;
 }
 
 .justified-text-left {
-  width: 27rem;
+  width: 22rem;
   margin-left: auto;
 }
 
+.project-image:hover {
+  border: 5px solid rgb(71, 238, 76);
+}
+
+/* about page */
 li {
   font-family: var(--main-font-family);
   font-weight: 500;
@@ -87,22 +109,11 @@ ul {
   list-style: square;
 }
 
-.project-image:hover {
-  border: 5px solid rgb(71, 238, 76);
-}
-
-/* about page */
-.about-myself h1 {
-  font-family: var(--handwriting-font-family);
-  color: rgb(71, 238, 76);
-}
-
 .about-myself {
   margin: 0 auto;
   text-align: center;
   /* allows centering for titles */
 }
-
 
 .about-myself ul {
   display: inline-block;
@@ -124,7 +135,7 @@ ul {
 
 .shecodes a:hover,
 .personality a:hover {
-  color: white;
+  color: rgb(87, 85, 85);
 }
 
 #inclusiveLanguage,
@@ -158,107 +169,30 @@ ul {
   gap: 20px;
 }
 
-.social-net {
+.social-contact {
   display: block;
   text-align: left;
 }
 
-.social-net i {
+.social-contact i {
   margin-right: 30px;
 }
 
-.social-net:link {
+.social-contact:link {
   color: rgb(83, 239, 89);
   text-decoration: none;
 }
 
-.social-net:visited {
+.social-contact:visited {
   color: rgb(83, 239, 89);
 }
 
-.social-net:hover {
+.social-contact:hover {
   color: rgb(87, 85, 85);
 }
 
-.social-net:active {
+.social-contact:active {
   color: rgb(87, 85, 85);
-}
-
-/* RESPONSIVENESS */
-
-/* works only on small screens */
-@media (max-width: 768px) {
-  .navbar>.container {
-    flex-wrap: nowrap !important;
-  }
-
-  h1,
-  h2,
-  h3,
-  a {
-    width: inherit;
-    text-align: center;
-  }
-
-  /* makes the text in the hamburger menu one line per item instead of breaking into two lines*/
-  .navbar-nav .nav-link {
-    white-space: nowrap;
-  }
-}
-
-/* works on medium and small screens */
-@media (max-width: 992px) {
-  .hero-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  /* creates more distance between the logo and the text in medium screens */
-  .navbar-collapse {
-    padding-left: 50px;
-  }
-
-  .work-examples {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  h1 {
-    font-size: 35px;
-  }
-
-  .home-intro {
-    margin-bottom: -70px;
-  }
-
-  .face-shot {
-    margin-bottom: 40px;
-  }
-
-  .about-intro {
-    margin-bottom: 30px;
-  }
-
-  .dog-picture {
-    margin-bottom: -35px;
-  }
-
-  .justified-text-right,
-  .justified-text-left {
-    width: inherit;
-  }
-
-  .project-image {
-    margin-bottom: 2rem;
-  }
-
-  .work-image {
-    margin-bottom: 2rem;
-    width: inherit;
-  }
 }
 
 /* button that sends you to another section of the page */
@@ -287,7 +221,6 @@ ul {
   height: 60px;
   /* 🔥 auto shrink text */
   font-size: clamp(12px, 2.5vw, 15px);
-
   transition: transform 0.5s ease;
 }
 
@@ -355,4 +288,65 @@ ul {
 
 .github-code:hover {
   color: rgb(87, 85, 85);
+}
+
+/* RESPONSIVENESS */
+
+/* works only on small screens */
+@media (max-width: 768px) {
+  .navbar>.container {
+    flex-wrap: nowrap !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  a {
+    width: inherit;
+    text-align: center;
+  }
+
+  /* makes the text in the hamburger menu one line per item instead of breaking into two lines*/
+  .navbar-nav .nav-link {
+    white-space: nowrap;
+  }
+}
+
+/* works on medium and small screens */
+@media (max-width: 992px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* creates more distance between the logo and the text in medium screens */
+  .navbar-collapse {
+    padding-left: 50px;
+  }
+
+  .work-examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .justified-text-right,
+  .justified-text-left {
+    width: inherit;
+  }
+
+  .project-image {
+    margin-bottom: 2rem;
+  }
+
+  .work-image {
+    margin-bottom: 2rem;
+    width: inherit;
+  }
 }
