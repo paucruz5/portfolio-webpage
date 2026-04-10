@@ -144,10 +144,6 @@ ul {
   color: rgb(87, 85, 85);
 }
 
-#inclusiveLanguage,
-#intraIntel,
-#interIntel,
-#emoIntel,
 #lgbtDef,
 #polyDef,
 #feministDef {
@@ -156,10 +152,6 @@ ul {
   transition: color 0.2s;
 }
 
-#inclusiveLanguage:hover,
-#intraIntel:hover,
-#interIntel:hover,
-#emoIntel:hover,
 #lgbtDef:hover,
 #polyDef:hover,
 #feministDef:hover {
@@ -178,7 +170,7 @@ ul {
 .social-contact {
   display: block;
   text-align: left;
-  font-size: clamp(22px, 4vw, 35px) !important;
+  font-size: clamp(20px, 4vw, 35px) !important;
 }
 
 .social-contact i {
@@ -260,6 +252,10 @@ ul {
 
 .email-link a:hover {
   color: rgb(87, 85, 85);
+}
+
+.email-link a {
+  font-size: clamp(0.8rem, 2.5vw, 1.5rem);
 }
 
 /* footer social buttons */
@@ -365,5 +361,31 @@ ul {
   .justified-text-right,
   .justified-text-left {
     width: 70%;
+  }
+}
+
+.image-link {
+  position: relative;
+  display: inline-block;
+}
+
+.tap-text {
+  position: absolute;
+  bottom: 40px;
+  right: 8px;
+  color: rgb(83, 239, 89);
+  font-size: 8px;
+  font-family: var(--main-font-family);
+}
+
+/* Hide by default */
+.tap-text {
+  display: none;
+}
+
+/* Show ONLY on devices that DON'T support hover (touch screens) */
+@media (hover: none) and (pointer: coarse) {
+  .tap-text {
+    display: block;
   }
 }

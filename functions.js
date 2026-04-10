@@ -36,22 +36,6 @@ function resizeList() {
 resizeList();
 window.addEventListener("resize", resizeList);
 
-/* resize about special lists */
-function resizeSpecialList() {
-  const elements = document.querySelectorAll(".specialList");
-  const windowWidth = window.innerWidth;
-
-  const baseFontSize = windowWidth / 35;
-
-  const maxFontSize = 22;
-
-  const newFontSize = Math.min(baseFontSize, maxFontSize);
-
-  elements.forEach((element) => {
-    element.style.fontSize = newFontSize + "px";
-  });
-}
-
 resizeSpecialList();
 window.addEventListener("resize", resizeSpecialList);
 
@@ -75,36 +59,6 @@ resizeContactLinks();
 window.addEventListener("resize", resizeContactLinks);
 
 /* Event listeners for word definitions */
-document
-  .getElementById("inclusiveLanguage")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    window.alert(
-      "Inclusive language avoids words, phrases, or tones that exclude or discriminate against people. It's also known as non-discriminatory language. E.g. the use of gender-neutral terms, etc.",
-    );
-  });
-document
-  .getElementById("intraIntel")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    window.alert(
-      "Intrapersonal intelligence is the ability to understand oneself, including one's thoughts, emotions, and motivations. It also involves using this understanding to make decisions and communicate.",
-    );
-  });
-document
-  .getElementById("interIntel")
-  .addEventListener("click", function (event) {
-    event.preventDefault();
-    window.alert(
-      "Interpersonal intelligence is the ability to understand, communicate and interact with others: manage relationships, understand their needs, feelings, behavior, etc. ",
-    );
-  });
-document.getElementById("emoIntel").addEventListener("click", function (event) {
-  event.preventDefault();
-  window.alert(
-    "Emotional intelligence is the ability to understand and manage your own emotions, as well as the emotions of others. It also involves being able to relate to others and solve conflicts.",
-  );
-});
 document.getElementById("lgbtDef").addEventListener("click", function (event) {
   event.preventDefault();
   window.alert(
